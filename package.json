@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "scripts": {
+    "prestart": "babel-node buildScripts/startMsg.js",
     "start": "npm-run-all --parallel open:src share",
     "open:src": "babel-node buildScripts/srcServer.js",
     "share": "lt --port 3000"
